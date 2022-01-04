@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style2.css">
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top mb-1" style="background-color: #b54c26;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style=" color: white;">
+                <img src="src/whiteLogo.png" alt="" width="70" height="70" class="d-inline-block align-text-center">
+                Souq
+            </a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"
+                            style=" color: white;">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style=" color: white;">
+                            Cataegory
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a id="CatNavBtn" class="dropdown-item" href="javascript:void(0)"
+                                    onclick="CataegoryPage(event)">men's clothing</a></li>
+                            <li><a id="CatNavBtn" class="dropdown-item" href="javascript:void(0)"
+                                    onclick="CataegoryPage(event)">women's clothing</a></li>
+                            <li><a id="CatNavBtn" class="dropdown-item" href="javascript:void(0)"
+                                    onclick="CataegoryPage(event)">jewelery</a></li>
+                            <li><a id="CatNavBtn" class="dropdown-item" href="javascript:void(0)"
+                                    onclick="CataegoryPage(event)">electronics</a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+
+
+                <!-- cart in header -->
+                <a href="#" style=" color:white; text-decoration:none;"><button type="button" class="btn position-relative text-white" style="background-color: #ed872f;"
+                    onclick="ShowCart()">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart
+                    <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill" id="cardNum"
+                        style="background-color: #789275;">
+
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </button></a>
+
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- slider for ADDs -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner p-1">
+            <div class="carousel-item active">
+                <img src="src/slider_1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="src/slider_2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="src/slider_3.png" class="d-block w-100" alt="...">
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+<!-- contiant -->
+<!-- 1 -->
+    <div class="row">
+      <div id="continer4">
+        <div id="con_4">
+            <img src="src/1.png" alt="con1">
+            <img src="src/2.png" alt="con2">
+            <img src="src/3.png" alt="con3">
+            <img src="src/4.png" alt="con4">
+          </div>
+        </div>
+    </div>
+    <!-- 2 -->
+        <div class="row">
+          <div id="continer5">
+            <h2> Most categories visited:</h2>
+            <hr>
+            <div id="con_5">
+              <img src="src/r_arrow.png" alt="arrowr" style="width:5%; position:absolute; top:60px; left:4%;">
+              <div class="div1">
+                <img src="src/cir1.png" alt="cir1" style="width:90%">
+                <h4>Grains, Pasta & Sides</h4>
+              </div>
+              <div class="div2">
+                <img src="src/cir2.png" alt="cir2" style="width:90%" >
+                <h4>Water, Juices</h4>
+              </div>
+                <div class="div3">
+                  <img src="src/cir3.png" alt="cir3" style="width:90%">
+              <h4>Breakfast & Cereal</h4>
+              </div>
+                <div class="div4">
+                  <img src="src/cir4.png" alt="cir4" style="width:90%">
+              <h4>Dairy, Eggs & Cheese</h4>
+              </div>
+              <img src="src/l_arrow.png" alt="arrowl" style="width:5%; position:absolute; top:60px; right:4%;">
+              </div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+            <div class="row">
+              <div id="continer4">
+                <div id="con_4">
+                    <img src="src/5.png" alt="con1">
+                    <img src="src/6.png" alt="con2">
+                  </div>
+                </div>
+            </div>
+
+        <!-- 4 -->
+            <div class="row">
+              <div id="continer5">
+                <h2> most sales:</h2>
+                <hr>
+                <div id="con_5">
+                  <img src="src/r_arrow.png" alt="arrowr" style="width:5%; position:absolute; top:60px; left:120px; left:4%;">
+                  <div class="div1">
+                    <img src="src/cir5.png" alt="cir1" style="width:90%">
+                    <h4>Frozen Foods</h4>
+                  </div>
+                  <div class="div2">
+                    <img src="src/cir6.png" alt="cir2" style="width:90%" >
+                    <h4>Candy</h4>
+                  </div>
+                    <div class="div3">
+                      <img src="src/cir7.png" alt="cir3" style="width:90%">
+                  <h4>Coffe</h4>
+                  </div>
+                    <div class="div4">
+                      <img src="src/cir8.png" alt="cir4" style="width:90%">
+                  <h4>Cookies</h4>
+                  </div>
+                  <img src="src/l_arrow.png" alt="arrowl" style="width:5%; position:absolute; top:60px; right:4%;">
+                  </div>
+                </div>
+            </div>
+
+    <!-- footer -->
+
+    <div class="row justify-content-center mt-5 pt-5" style="background-color: #b54c26; color: white">
+        <div class="col-7 pt-5">
+            <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                    <img src="src/whiteLogo.png" alt="..." width="100px">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                    &copy;Copyright.G3 team at ITI .net Sohag 2021”
+                </div>
+            </div>
+        </div>
+        <div class="col-5">
+              <ul class="list-unstyled">
+                Cataegory
+                <li class="mb-2">
+                    <a href="#" style="color: white;">men's clothing</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" style="color: white;">women's clothing</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" style="color: white;">jewelery</a>
+                </li>
+                <li class="mb-2" >
+                    <a href="#" style="color: white;">electronics</a>
+                </li>
+              </ul>
+        </div>
+    </div>
+
+  </body>
+</html>
